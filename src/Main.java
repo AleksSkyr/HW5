@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -73,18 +71,19 @@ public class Main {
 
         if (distance <= 20) {
             System.out.println("Доставка составит " + deliveryDey + " день");
-        }else if (distance > 20 && distance <= 60) {
+        } else if (distance > 20 && distance <= 60) {
             deliveryDey++;
             System.out.println("Доставка составит " + deliveryDey + " дней");
-        }else if (distance > 60 && distance < 100) {
+        } else if (distance > 60 && distance < 100) {
             deliveryDey = deliveryDey + 2;
             System.out.println("Доставка составит " + deliveryDey + " дней");
-        }else{
+        } else {
             System.out.println("Доставка невозможна");
         }
 
 
     }
+
     public static void tasc5() {
         System.out.println("Задача 5");
         int month = 11;
@@ -115,4 +114,3 @@ public class Main {
         }
     }
 }
-
